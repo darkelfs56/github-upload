@@ -1,16 +1,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
 
 * {
   font-family: arial, sans-serif;
   background-color: #F5F5F5;
 }
 
-/* body {
-  width: 50%;
+body {
   margin: 0 auto;
-  tex-align: center;
-} */
+  max-width: 1349px;
+}
 
 div.menu {
     border: solid 2px #6A6A6A;
@@ -22,13 +21,13 @@ div.menu {
 }
 
 div.menu a {
-  font: normal 0.92em 'Source Sans Pro light 300', Arial, sans-serif;
+  font: normal 0.90em 'Source Sans Pro light 300', Arial, sans-serif;
   color: #3A3A3A;
-  margin: 7px;
+  margin: 0.5em;
 }
 
 h1.webTitle {
-  font: bold 3.5em 'Source Sans Pro bold 700', Arial, sans-serif;
+  font: bold 3.5em 'Source Sans Pro', Arial, sans-serif;
   margin: 0 auto;
   text-align: center;
 }
@@ -46,16 +45,27 @@ hr {
 
 div.textBox {
   display: block;
-  margin: 20px auto;
-  width: 404px;
-  height: 321px;
-  padding: 10px 14px;
-  border: 2px solid #777;
-  border-radius: 10px 10px 10px 10px;
+  float: left;
+  left: 13%;
+  position: sticky;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 100px 20px 10px 0px;
+  /* border: 2px solid #777;
+  border-radius: 10px 10px 10px 10px; */
 }
 
 div.textBox h3 {
-  font: bold 2em 'Source Sans Pro bold 700', Arial, sans-serif;
+  font: bold 3em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
   color: #3A3A3A;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+
+div.textBox p {
+  font: bold 1.7em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #888;
+  margin: 7px auto;
 }

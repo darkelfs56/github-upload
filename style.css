@@ -17,7 +17,7 @@ div.menu {
     width: 40%;
     margin: 40px auto 16px;
     padding: 20px 10px 20px;
-    text-align: center;
+
 }
 
 div.menu a {
@@ -35,7 +35,7 @@ h1.webTitle {
 p.introText {
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   color: #888888;
-  margin: 10px auto 20px;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -69,84 +69,3 @@ div.textBox p {
   color: #888;
   margin: 7px auto;
 }
-
-*/MAIN COMPONENT PAGE STYLING ((START))*/
-
-.comp_nav {
-  text-align: center;
-  margin: 60px auto 60px;
-}
-
-.mcOverview {
-  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
-  color: #3E3F3E;
-  text-align: center;
-  margin: 60px auto 60px;
-  width: 40%;
-  line-height: 150%
-}
-
-.comp_titles {
-  font: bold 2.5em 'Source Sans Pro bold 700', Arial, sans-serif;
-  color: #2C2C2C;
-  width: 30%;
-}
-
-.sub_titles {
-  font: bold 'Source Sans Pro bold 700', Arial, sans-serif;
-  color: #404040;
-  width: 100%;
-}
-
-.bodyText {
-  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
-  color: #3E3F3E;
-  width: 40%;
-}
-
-.info {
-  margin: 0 auto;
-  padding: 20px 10px 20px;
-}
-
-.comp_titles2 {
-  font: bold 2.5em 'Source Sans Pro bold 700', Arial, sans-serif;
-  color: #2C2C2C;
-  width: 100%;
-  float: right;
-}
-
-.sub_titles2 {
-  font: bold 'Source Sans Pro bold 700', Arial, sans-serif;
-  color: #404040;
-  width: 100%;
-  text-align: right;
-  float: right;
-}
-
-.bodyText2 {
-  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
-  color: #3E3F3E;
-  width: 40%;
-  float: right;
-  text-align: right;
-}
-
-.column {
-  float: left;
-  width: 40%;
-  padding: 25px 25px 25px 25px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-img {
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-  width: 50%;
-}
-
-*/MAIN COMPONENT PAGE STYLING ((END))*/

@@ -2,12 +2,30 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="projectcss.css">
-</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 <body>
+
+  <button onclick="topFunction()" id="top" title="Go to top">TOP</button>
+
+  <div class="navbar" id="navs">
+    <a href="#">Main Components</a>
+    <a href="#">Computer Peripherals</a>
+    <a href="#" class="active">Essential and Useful Parts</a>
+    <a class="aboutr" style="float: right" href="#">About</a>
+  </div>
+
+  <br>
+  <br>
+
+
+
   <div class="heading">
     <h1>PSU</h1>
     <h4>power supply unit</h4>
@@ -17,7 +35,7 @@
 
   <div class="row">
 
-    <div class="column" id="left1">
+    <div class="column">
 
       <h3>Converts main AC to low-voltage regulated DC power. <br>
         How to choose the best PSU:</h3>
@@ -40,14 +58,12 @@
 
     </div>
     <br>
-    <div class="column">
-      <div>
-        <img class="mySlides" src="psu.jpg" alt="psu image" width="100%">
-        <img class="mySlides" src="psuimage2.jpg" alt="psu2 image" width="100%">
-        <img class="mySlides" src="psuimage3.png" alt="psu3 image" width="100%">
-<!--
-        <button class="buttonleft" onclick="plusDivs(-1)"><</button>
-            <button class="buttonright" onclick="plusDivs(+1)">></button> -->
+    <div class="columnimg">
+      <div class="fotorama" data-loop="true">
+        <img class="slides1" src="psu.jpg" alt="psu image" width="500px" height="300px" data-caption="Non Modular PSU">
+        <img class="slides1" src="psuimage2.jpg" alt="psu2 image" width="500px" height="300px" data-caption="Non-Modular PSU">
+        <img class="slides1" src="psuimage3.png" alt="psu3 image" width="500px" height="300px" data-caption="Fully Modular PSU">
+
       </div>
     </div>
   </div>
@@ -60,7 +76,7 @@
   </div>
 
   <div class="row">
-    <div class="column" id="left1">
+    <div class="column">
       <h3>Case fan</h3>
       <h4>The thing we need to consider is:</h4>
       <hr>
@@ -82,12 +98,13 @@
         c. Rifle type have a shorter lifespan but it fits the compromise of cost, efficiency and noise level.
       </div>
     </div>
-    <div class="column">
-      <img class="mySlides" src="casefan.png" alt="case fan image png" width="100%">
-      <img class="mySlides" src="casefan2.png" alt="case fan2 image png" width="100%">
-      <img class="mySlides" src="casefan3.png" alt="case fan3 image png" width="100%">
-      <!-- <button class="buttonleft" onclick="plusDivs(-1)"><</button>
-          <button class="buttonright" onclick="plusDivs(+1)">></button> -->
+    <div class="columnimg">
+      <div class="fotorama" data-loop="true">
+        <img class="slides2" src="casefan.png" alt="case fan image png" width="500px" height="300px" data-caption="Normal Case fan">
+        <img class="slides2" src="casefan2.png" alt="case fan2 image png" width="500px" height="300px" data-caption="RGB case fan">
+        <img class="slides2" src="casefan3.png" alt="case fan3 image png" width="500px" height="300px" data-caption="White normal case fan">
+
+      </div>
     </div>
   </div>
   <br><br>
@@ -108,12 +125,13 @@
         it is much more pricier than the standard air coolers.
       </div>
     </div>
-    <div class="column">
-      <img class="mySlides" src="cpufan.png" alt="cpufan picture" width="100%">
-      <img class="mySlides" src="aio.jpg" alt="all in one picture" width="100%">
-      <img class="mySlides" src="aiocooler2.png" alt="second aio picture" width="100%">
-      <!-- <button class="buttonleft" onclick="plusDivs(-1)"><</button>
-          <button class="buttonright" onclick="plusDivs(+1)">></button> -->
+    <div class="columnimg">
+      <div class="fotorama" data-loop="true">
+        <img class="slides3" src="cpufan.png" alt="cpufan picture" width="500px" height="300px" data-caption="Air Cooling">
+        <img class="slides3" src="aio.jpg" alt="all in one picture" width="500px" height="300px" data-caption="AIO Cooling">
+        <img class="slides3" src="aiocooler2.png" alt="second aio picture" width="500px" height="300px" data-caption="Single fan AIO Cooling">
+
+      </div>
     </div>
   </div>
   <br>
@@ -141,8 +159,13 @@
         small components.
       </div>
     </div>
-    <div class="column">
-      <img src="thermalpaste.jpg" alt="picture of thermalpaste" width="100%">
+    <div class="columnimg">
+      <div class="fotorama" data-loop="true" data-fit="contain">
+        <img class="slides4" src="thermalpaste.jpg" alt="picture of thermalpaste" width="500px" height="300px" data-caption="Normal thermal paste">
+        <img class="slides4" src="thermalpaste2.png" alt="picture of thermalpaste2" width="500px" height="300px" data-caption="Normal thermal paste">
+        <img class="slides4" src="thermalpaste3.jpg" alt="picture of thermalpaste3" width="500px" height="300px" data-caption="Liquid metal cooling">
+
+      </div>
     </div>
   </div>
   <br>
@@ -165,26 +188,52 @@
         that need to be connect to.
       </div>
     </div>
-    <div class="column">
-      <img src="cables.png" alt="picture of cables" width="100%">
+    <div class="columnimg">
+      <div class="fotorama" data-loop="true">
+        <img class="slides5" src="cables.png" alt="picture of cables" width="500px" height="300px" data-caption="White and Red cables ">
+        <img class="slides5" src="cables2.png" alt="picture of cables2" width="500px" height="300px" data-caption="Blue coloured sleeve cables">
+        <img class="slides5" src="cables3.png" alt="picture of cables3" width="500px" height="300px" data-caption="RGB in cables">
+
+      </div>
     </div>
   </div>
+  <br>
+  <br>
+
+  <footer>
+    <address>
+      Visit Us at: <br>
+      fake address <br>
+      60100, Kuala Lumpur, <br>
+      Malaysia <br>
+      Contact us:
+      examplefakeaddress@fake.com <br>
+      Tel: +(601)23456789 <br>
+    </address>
+
+  </footer>
 
 
   <script>
-    
+    var topbutton = document.getElementById("top");
 
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topbutton.style.display = "block";
+      } else {
+        topbutton.style.display = "none";
+      }
+    }
 
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
-
-
-
-
-
-
-
-
 
 
 </html>

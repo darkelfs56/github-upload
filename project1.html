@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="projectcss.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -15,55 +15,60 @@
   <button onclick="topFunction()" id="top" title="Go to top">TOP</button>
 
   <div class="menu" style="width:614px;">
-      <a href="index.html">Home</a>
-      <a href="maincomponents.html">Main Components</a>
-      <a href="peripherals.html">Computer Peripherals</a>
-      <a>Essential and Useful Parts</a>
-      <a href="#">Help</a>
+    <a href="index.html">Home</a>
+    <a href="maincomponents.html">Main Components</a>
+    <a href="peripherals.html">Computer Peripherals</a>
+    <a>Essential and Useful Parts</a>
+    <a href="#">Help</a>
   </div>
 
   <br>
   <br>
 
+  <h1 class="webTitle">Essential and Useful Parts</h1>
+  <p class="introText">The things you need to complete your awesome computer
+  <hr>
 
 
   <div class="heading">
-    <h1>PSU</h1>
-    <p class= "introText">power supply unit</p>
+    <h1 class="compoTitle"> PSU</h1>
+    <p class="introText">power supply unit</p>
     <hr>
   </div>
 
 
   <div class="row">
 
-    <div class="column">
+    <div class="column" style="float: left;">
 
-      <h3>Converts main AC to low-voltage regulated DC power. <br>
-        How to choose the best PSU:</h3>
-      1. Power Output <br>
-      How much power you need depends on how much the components need power.
-      Buy a higher watt power supply to be safe as there is no wrong in having more
-      power.
-      <hr>
-      2. Efficiency <br>
-      How much DC power it send to the PC and how much it will lost to heat. Typically we
-      would recommend getting the 80 Plus certificate power supply to get the most efficiency
-      <hr>
-      3. Modularity of Cables <br>
-      There is 3 type of modularity of PSU. <br>
-      a. Non-Modular - all cable attached.<br>
-      b. Semi-Modular - essential cables pre attached <br>
-      c. Full-modular - no cables pre attached <br>
-      Typically, with money we go with full modular so we can plug only the cables we use
-      thus saving space and especially helps with cable management.
-
+      <h1>Converts main AC to low-voltage regulated DC power.</h1>
+      <h2 class="subTitle">How to choose the best PSU-</h2>
+      <p class="MC_info">
+        1. Power Output <br>
+        How much power you need depends on how much the components need power.
+        Buy a higher watt power supply to be safe as there is no wrong in having more
+        power.
+        </p><hr>  <p class="MC_info">
+        2. Efficiency <br>
+        How much DC power it send to the PC and how much it will lost to heat. Typically we
+        would recommend getting the 80 Plus certificate power supply to get the most efficiency
+        </p><hr>
+      <p class="MC_info">
+         3. Modularity of Cables <br>
+        There is 3 type of modularity of PSU. <br>
+        a. Non-Modular - all cable attached.<br>
+        b. Semi-Modular - essential cables pre attached <br>
+        c. Full-modular - no cables pre attached <br>
+        Typically, with money we go with full modular so we can plug only the cables we use
+        thus saving space and especially helps with cable management.
+      </p>
     </div>
     <br>
-    <div class="columnimg">
+    <div class="columnimg" style="float: right; position:relative; left:-150px; top:200px; margin: 0px auto;">
       <div class="fotorama" data-loop="true" data-width="400px" data-height="300px">
-        <img class="slides1" src="Images\psu.jpg" alt="psu image" data-caption="Non Modular PSU">
-        <img class="slides1" src="Images\psuimage2.jpg" alt="psu2 image"  data-caption="Non-Modular PSU">
-        <img class="slides1" src="Images\psuimage3.png" alt="psu3 image" data-caption="Fully Modular PSU">
+        <img class="compoImage" src="Images\psu4.jpg" alt="psu image" data-caption="Non Modular PSU">
+        <img class="compoImage" src="Images\psuimage2.jpg" alt="psu2 image" data-caption="Non-Modular PSU">
+        <img class="compoImage" src="Images\psuimage3.png" alt="psu3 image" data-caption="Fully Modular PSU">
 
       </div>
     </div>
@@ -77,60 +82,59 @@
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="columnimg" style="float: left; position:relative; left:130px; top:250px; margin: 0px auto;  ">
+      <div class="fotorama" data-loop="true" data-width="400px" data-height="300px" >
+        <img class="compoImage" src="Images\casefan.png" alt="case fan image png" data-caption="Normal Case fan">
+        <img class="compoImage" src="Images\casefan2.png" alt="case fan2 image png" data-caption="RGB case fan">
+        <img class="compoImage" src="Images\casefan3.png" alt="case fan3 image png" data-caption="White normal case fan">
+      </div>
+    </div>
+    <div class="column" style="float: right">
       <h3>Case fan</h3>
       <h4>The thing we need to consider is:</h4>
       <hr>
-      <div>
+      <p class="MC_info">
         1. Fan size <br>
         It varies from 25 mm to 200 mm and above. The bigger your case, the bigger the fan you can put to
         accomodate the flow of air. Though the bigger the fan, the slower the speed but the less noise it makes
-        <hr>
+      </p><hr><p class="MC_info">
         2. Fan speed <br>
         Fan speed affects the temperature of the PC. Bigger fans can push out and pull in more air
         but produce more noise. Smaller fans are faster but suck in less air or push out less than their
         bigger counter part
-        <hr>
+        </p><hr><p class="MC_info">
         3. Bearing types <br>
         There are 3 types of bearing, namely sleeve, ball and hydronynamic <br>
         a. Hydrodynamics can lubricate themsleves and operate on the lowest noise levels but they are the highest price <br>
         b. Ball bearing can work at long period but produce more noise. More suitable for server building or if the computer
         is not in the same room as the user. <br>
         c. Rifle type have a shorter lifespan but it fits the compromise of cost, efficiency and noise level.
-      </div>
-    </div>
-    <div class="columnimg">
-      <div class="fotorama" data-loop="true" data-width="400px" data-height="300px">
-        <img class="slides2" src="Images\casefan.png" alt="case fan image png"   data-caption="Normal Case fan">
-        <img class="slides2" src="Images\casefan2.png" alt="case fan2 image png"   data-caption="RGB case fan">
-        <img class="slides2" src="Images\casefan3.png" alt="case fan3 image png"  data-caption="White normal case fan">
-
-      </div>
+      </p>
     </div>
   </div>
   <br><br>
   <div class="row">
-    <div class="column" id="left1">
+    <div class="column" style="float: left;">
       <h3>CPU cooler</h3>
       <h4>Two type of CPU cooler:</h4>
       <hr>
-      <div>
+      <p class="MC_info">
         1. Air coolers <br>
         Made up of combination of metal heatsinks and fans. They are the simplest form of cooling in which
         we only use fans to cool down the heated CPU. So we can expect some fan noise if the PC is under
         pressure or "load".
-        <hr>
+      </p><hr><p class="MC_info">
         2. All-in-One (AIO) <br>
         Also known as closed-loop coolers, much quiter than air coolers but with more higher cooling power.
         They use water with a coolant inside the tubes to cool down the CPU. Though sounds better than air coolers
         it is much more pricier than the standard air coolers.
-      </div>
+      </p>
     </div>
-    <div class="columnimg">
-      <div class="fotorama" data-loop="true" data-width="400px" data-height="300px">
-        <img class="slides3" src="Images\cpufan.png" alt="cpufan picture" data-caption="Air Cooling">
-        <img class="slides3" src="Images\aio.jpg" alt="all in one picture"  data-caption="AIO Cooling">
-        <img class="slides3" src="Images\aiocooler2.png" alt="second aio picture"  data-caption="Single fan AIO Cooling">
+    <div class="columnimg" style= "float:right; position:relative; left:-100px; top:95px; margin: 0px auto;">
+      <div class="fotorama" data-loop="true" data-width="500px" data-height="300px">
+        <img class="compoImage" src="Images\cpufan.png" alt="cpufan picture" data-caption="Air Cooling">
+        <img class="compoImage" src="Images\aio.jpg" alt="all in one picture" data-caption="AIO Cooling">
+        <img class="compoImage" src="Images\aiocooler2.png" alt="second aio picture" data-caption="Single fan AIO Cooling">
 
       </div>
     </div>
@@ -142,29 +146,29 @@
     <hr>
   </div>
   <div class="row">
-    <div class="column">
-      <div>
+    <div class="column" style="float: right;">
+      <p class="MC_info">
         Thermal Paste is a compound that is a heat conductive substance applied between the heatsink
         and the device it's meant to cool. <br>The heatsink will push out excess heat energy produced by the
         processor away from the unit and sent it to the fan or other cooling apparatus.
-        <hr>
+      </p><hr><p class="MC_info">
         How to choose? <br>
         1. Know the thermal conductivity of the paste. A liquid metal thermal paste may have a high watts per meter of
         surface(W/mk), whule a non-metallic thermal paster have a lower W/mk.
-        <hr>
+        </p><hr><p class="MC_info">
         2. Liquid metal thermal paste is much more harder to apply because of its lower density. The non-metallic
         counterpart have a higher viscosirt so its like an actual paste. It is much more easier to apply compare
         to a liquid type.
-        <hr>
+        <hr><p class="MC_info">
         3. Thermal paste need to be applied carefully, if it leaks to the motherboard it may damage any nearby
         small components.
-      </div>
+      </p>
     </div>
-    <div class="columnimg">
+    <div class="columnimg" style="float: left; position:relative; left:140px; top:100px; margin: 0px auto;">
       <div class="fotorama" data-loop="true" data-width="400px" data-height="300px">
-        <img class="slides4" src="Images\thermalpaste.jpg" alt="picture of thermalpaste"  data-caption="Normal thermal paste">
-        <img class="slides4" src="Images\thermalpaste2.png" alt="picture of thermalpaste2"  data-caption="Normal thermal paste">
-        <img class="slides4" src="Images\thermalpaste3.jpg" alt="picture of thermalpaste3" data-caption="Liquid metal cooling">
+        <img class="compoImage" src="Images\thermalpaste.jpg" alt="picture of thermalpaste" data-caption="Normal thermal paste">
+        <img class="compoImage" src="Images\thermalpaste2.png" alt="picture of thermalpaste2" data-caption="Normal thermal paste">
+        <img class="compoImage" src="Images\thermalpaste3.jpg" alt="picture of thermalpaste3" data-caption="Liquid metal cooling">
 
       </div>
     </div>
@@ -176,8 +180,8 @@
     <hr>
   </div>
   <div class="row">
-    <div class="column">
-      <div>
+    <div class="column" style="float: left;">
+      <p class="MC_info">
         There's not much to say about this. All cables in a Personal Computer is pretty the same unless you choose to buy coloured ones
         to coordinate with your build. It's all aesthetics and personal touch only. Most of the cables that are used comes from either
         the case or from the PSU box. <br>
@@ -187,13 +191,13 @@
         production. <br>
         Plus nowadays, building a computer is easy as most components can only go one way and most of it have specific number of pins
         that need to be connect to.
-      </div>
+      </p>
     </div>
-    <div class="columnimg">
+    <div class="columnimg" style="float: right; position:relative; left:-100px; top:100px; margin: 0px auto;">
       <div class="fotorama" data-loop="true" data-width="400px" data-height="300px">
-        <img class="slides5" src="Images\cables.png" alt="picture of cables"  data-caption="White and Red cables ">
-        <img class="slides5" src="Images\cables2.png" alt="picture of cables2"  data-caption="Blue coloured sleeve cables">
-        <img class="slides5" src="Images\cables3.png" alt="picture of cables3" data-caption="RGB in cables">
+        <img class="compoImage" src="Images\cables.png" alt="picture of cables" data-caption="White and Red cables ">
+        <img class="compoImage" src="Images\cables2.png" alt="picture of cables2" data-caption="Blue coloured sleeve cables">
+        <img class="compoImage" src="Images\cables3.png" alt="picture of cables3" data-caption="RGB in cables">
 
       </div>
     </div>

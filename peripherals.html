@@ -13,6 +13,7 @@
 
 <link rel="stylesheet" href="style.css">
 <div class="menu">
+    <a href="index.html">Home</a>
     <a href="maincomponents.html">Main Components</a>
     <a href="#">Computer Peripherals</a>
     <a href="project1.html">Essential and Useful Parts</a>
@@ -39,7 +40,7 @@
         better than VA panels, but VA monitors have the best contrast out of all three panel types.</li>
     </ul>
     Example of monitors:
-    <div class="fotorama" data-width="400" data-height="300">
+    <div class="fotorama" data-width="400" data-height="300" data-loop='true'>
       <img src="Images/pmon1.webp" data-caption='Philips Adaptive Sync IPS LCD Monitor'>
       <img src="Images/dmon.jfif" data-caption='DELL 24" TN GAMING MONITOR'>
       <img src="Images/pmon2.jpg" data-caption='Philips 21.5" VA Adaptive Sync LED Monitor'>
@@ -52,7 +53,6 @@
     </ul>
     </p>
   </div>
-
   <button type='button' class='collapsible'>
     <span class='perititle'>Case</span>
   </button>
@@ -150,7 +150,22 @@
     </p>
 
   </footer>
-  <script src='peripherals.js'></script>
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight =  content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
 </body>
 
 </html>

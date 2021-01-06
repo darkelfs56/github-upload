@@ -121,7 +121,7 @@ div.textBox p {
 }
 
 .collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: "\2796"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: white;
   float: right;
@@ -129,12 +129,11 @@ div.textBox p {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: '\02795'; /* Unicode character for "minus" sign (-) */
 }
 
 .perititle{
   font-size: 40px;
-  width: 100%;
 }
 .nav  {
   display: inline;
@@ -157,9 +156,6 @@ footer  {
   border: 1px solid black;
 }
 
-h1{
-  text-align: center;
-}
 =======
 div.textBox2 p {
   font: normal 1.3em 'Source Sans Pro', Arial, sans-serif;

@@ -9,13 +9,66 @@
     <div class="menu">
         <a href="index.html">Home</a>
         <a>Main Components</a>
-        <a href="#">Computer Peripherals</a>
-        <a href="imransofar.html">Essential and Useful Parts</a>
+        <a href="peripherals.html">Computer Peripherals</a>
+        <a href="project1.html">Essential and Useful Parts</a>
+        <a href="#">Help</a>
+      
     </div>
 
     <h1 class="webTitle">Main Components</h1>
     <p class="introText">The brain, brawn and heart of your standard computer.
+     
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/motherboard.png" style="width: 210px;">
+              <div class="text">
+                <p>Motherboard</p>
+                <a href="#motherboard_section">Learn More</a>
+              </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/cpu.png" style="width: 300px;">
+              <div class="text">
+            <p>CPU</p>
+          <a href="#cpu_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/gpu.png" style="width: 300px;">
+              <div class="text">
+            <p>GPU</p>
+          <a href="#gpu_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/ram.png" style="width: 310px; padding-top: 30px;">
+              <div class="text">
+            <p>RAM</p>
+          <a href="#ram_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/storage.png" style="width: 240px; padding-left: 30px;">
+              <div class="text">
+            <p>Storage</p>
+          <a href="#storage_section">Learn More</a>
+        </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
     <hr>
+    
     <p class="MC_info"
        style="text-align: center;
               width: 40%;
@@ -27,9 +80,9 @@
       with is only a hollow shell of technology! Scroll on to learn more about the
       means of the brain, brawn and heart of your standard computer.
     <hr>
-  <div class="row">
-  <div class="column">
-    <h1 class="compoTitle">Motherboard.</h1>
+  <div class="MC_row">
+  <div class="MC_column">
+    <h1 id="motherboard_section" class="compoTitle">Motherboard.</h1>
     <h2 class="subTitle">The heart―</h2>
     <p class="MC_info">
         The motherboard is the central of all other main components
@@ -37,18 +90,18 @@
         within the computer. In times if it is unable to work properly, the whole
         system may come to a grinding halt.</p>
   </div>
-  <div class="column">
+       <div class="MC_column">
     <img class="compoImage" src="Images/motherboard.png" alt="motherboard">
   </div>
 </div>
 <hr>
       <div class="readMore_container">
-      <div class="row">
-        <div class="column">
-          <h1 class="compoTitle" style="float: right;">CPU.</h1>
+       <div class="MC_row">
+        <div class="MC_column">
+          <h1 id="cpu_section" class="compoTitle" style="float: right;">CPU.</h1>
           <img class="compoImage" src="Images/cpu.png" alt="example_cpu">
         </div>
-        <div class="column">
+       <div class="MC_column">
         <h2 class="subTitle"><br><br><br>The brain―</h2>
         <p class="MC_info">Acting as the computer's intellect and brain, the Central
           Processing Unit also known as the CPU does the computing and processing works
@@ -56,26 +109,26 @@
           <span class="extendBtn">Read More</span>
         </div>
       </div>
-      <div class="row">
-        <div class="column">
+      <div class="MC_row">
+       <div class="MC_column">
         <h2 class="subTitle" style="text-align: right;"><br><br><br>The graphics―</h2>
         <p class="MC_info" style="text-align: right;">Formally known as the Graphic Processing Unit,<br>
           the GPU processes all the graphical data of your computer varying from programs'
           interface to <br>gaming visuals and experience.<span class="moreText"> Bla bla bla</span></p>
           <span class="extendBtn" style="float: right;">Read More</span>
         </div>
-        <div class="column">
-          <h1 class="compoTitle">GPU.</h1>
+       <div class="MC_column">
+          <h1 id="gpu_section" class="compoTitle">GPU.</h1>
           <img class="compoImage" src="Images/gpu.png" alt="example_gpu">
         </div>
         </div>
         <hr>
-        <div class="row">
-          <div class="column">
-            <h1 class="compoTitle" style="text-align: right;">RAM.</h1>
+          <div class="MC_row">
+          <div class="MC_column">
+            <h1 id="ram_section" class="compoTitle" style="text-align: right;">RAM.</h1>
             <img class="compoImage" src="Images/ram.png" alt="example_ram">
           </div>
-          <div class="column">
+       <div class="MC_column">
           <h2 class="subTitle"><br><br><br>The memory―</h2>
           <p class="MC_info">Random Access Memory, also known as volatile memory, stores
             data of your frequently accessed programs and processes.<span class="moreText"> Bla bla bla</span></p>
@@ -83,15 +136,15 @@
           </div>
           </div>
 
-        <div class="row">
-          <div class="column">
+       <div class="MC_row">
+       <div class="MC_column">
           <h2 class="subTitle" style="text-align: right;"><br><br><br>The space capacity―</h2>
           <p class="MC_info" style="text-align: right;">Hand in hand with RAM, data storage is where your data and
             program innards reside. The bigger the space, the more data can be stored.<span class="moreText"> Bla bla bla</span></p>
             <span class="extendBtn" style="float: right;">Read More</span>
           </div>
-          <div class="column">
-            <h1 class="compoTitle">Storage.</h1>
+       <div class="MC_column">
+            <h1 id="storage_section" class="compoTitle">Storage.</h1>
             <img class="compoImage" src="Images/storage.png" alt="example_storage">
           </div>
         </div>
@@ -99,6 +152,14 @@
         <hr>
 
         <script src="mcjavascript.js"></script>
+
+        <footer>
+          <h3>Contact Us</h3>
+          <p>Address: UIA Gombak, 51300, Selangor <br>
+            Telephone: 012-3456789
+            Email: support@website.com.my
+          </p>
+        </footer>
 
   </body>
 </html>

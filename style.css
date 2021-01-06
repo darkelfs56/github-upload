@@ -115,11 +115,27 @@ div.textBox p {
 .content {
   padding: 0 18px;
   background-color: white;
-  max-height: 100%;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.perititle{
+  font-size: 40px;
+  width: 100%;
+}
 .nav  {
   display: inline;
 }
@@ -211,7 +227,7 @@ div.verticalBox p {
   text-align: center;
 }
 
-/*maincomponents */ 
+/*maincomponents */
 
 p.MC_info {
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;

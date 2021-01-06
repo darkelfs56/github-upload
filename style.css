@@ -286,17 +286,17 @@ img.compoImage {
   width: 400px;
 }
 
-.column {
+.MC_column {
   float: left;
   width: 43%;
   padding: 25px 30px 25px 30px;
 }
 
-.row {
+.MC_row {
   width: 70%;
   margin: 0 auto;
 }
-.row:after {
+.MC_row:after {
   content: "";
   display: table;
   clear: both;

@@ -158,3 +158,72 @@ div.verticalBox p {
   padding-bottom: 30px;
   text-align: center;
 }
+
+/*maincomponents */ 
+
+p.MC_info {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
+  color: #3E3F3E;
+  line-height: 150%;
+}
+
+.readMore_container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
+}
+
+.extendBtn {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
+  margin-top: 30px;
+  display: block;
+  background-color: #404040;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.moreText {
+  display: none;
+}
+
+.moreText_show{
+  display: inline;
+}
+
+h1.compoTitle {
+  font: bold 2.5em 'Source Sans Pro bold 700', Arial, sans-serif;
+  color: #2C2C2C;
+}
+
+h2.subTitle {
+  font: bold 1.5em 'Source Sans Pro bold 700', Arial, sans-serif;
+  color: #404040;
+}
+
+img.compoImage {
+  width: 400px;
+}
+
+.column {
+  float: left;
+  width: 43%;
+  padding: 25px 30px 25px 30px;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*maincomponents*/

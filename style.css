@@ -8,7 +8,15 @@
 
 body {
   margin: 0 auto;
+  width: 1349px;
   max-width: 1349px;
+}
+
+h3 {
+  font: bold 2em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #3A3A3A;
+  margin: 10px auto;
 }
 
 div.menu {
@@ -17,7 +25,9 @@ div.menu {
     width: 40%;
     margin: 40px auto 16px;
     padding: 20px 10px 20px;
-
+    /* position: sticky;
+    top:0px;
+    z-index: 1; */
 }
 
 div.menu a {
@@ -45,18 +55,31 @@ hr {
 
 div.textBox {
   display: block;
-  float: left;
-  left: 13%;
-  position: sticky;
+  position: relative;
   margin: 0 auto;
-  width: auto;
-  height: auto;
-  padding: 100px 20px 10px 0px;
-  /* border: 2px solid #777;
-  border-radius: 10px 10px 10px 10px; */
+}
+
+div.textBox2 {
+  display:block;
+  float:none;
+  position:relative;
+  left:128px;
+  padding:0px;
+  width:80%;
+  text-align:center;
+  margin: 100px 0px 40px 0px;
+  border:2px solid #777;
+  border-radius: 10px;
 }
 
 div.textBox h3 {
+  font: bold 3em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #3A3A3A;
+  margin: 10px auto;
+}
+
+div.textBox2 h3 {
   font: bold 3em 'Source Sans Pro', Arial, sans-serif;
   font-weight: 700;
   color: #3A3A3A;
@@ -70,6 +93,7 @@ div.textBox p {
   margin: 7px auto;
 }
 
+<<<<<<< HEAD
 .collapsible {
   background-color: #BBB;
   color: #444;
@@ -120,3 +144,139 @@ footer  {
 h1{
   text-align: center;
 }
+=======
+div.textBox2 p {
+  font: normal 1.3em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  margin: 7px auto;
+}
+
+div.names p {
+  font:bold 2em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #3A3A3A;
+  margin:0;
+  display: block;
+  position: relative;
+  float: right;
+}
+
+div.buttons {
+  font: bold 2.5em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #888;
+  background-color: #DDD;
+  display: block;
+  float: right;
+  position: relative;
+  border: 2px solid #888;
+  border-radius: 6px;
+  top: 130px;
+}
+
+div.verticalBox {
+  display: block;
+  position: relative;
+  margin:0;
+  width:340px;
+  height:1800px;
+  /* border: 2px solid #000;
+  border-radius:10px; */
+}
+
+div.imageBox {
+  display: block;
+  position: relative;
+  width:300px;
+  height:300px;
+  /* border: 2px solid #777;
+  border-radius:10px; */
+  margin:30px auto 0px;
+}
+
+div.verticalBox h3 {
+  text-align: center;
+}
+
+div.verticalBox p {
+  font: bold 1.3em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #888;
+  margin: 7px auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/*maincomponents */ 
+
+p.MC_info {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
+  color: #3E3F3E;
+  line-height: 150%;
+}
+
+.readMore_container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
+}
+
+.extendBtn {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
+  margin-top: 30px;
+  display: block;
+  background-color: #404040;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.moreText {
+  display: none;
+}
+
+.moreText_show{
+  display: inline;
+}
+
+h1.compoTitle {
+  font: bold 2.5em 'Source Sans Pro bold 700', Arial, sans-serif;
+  color: #2C2C2C;
+}
+
+h2.subTitle {
+  font: bold 1.5em 'Source Sans Pro bold 700', Arial, sans-serif;
+  color: #404040;
+}
+
+img.compoImage {
+  width: 400px;
+}
+
+.column {
+  float: left;
+  width: 43%;
+  padding: 25px 30px 25px 30px;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*maincomponents*/
+>>>>>>> 46e08ca03694c898fb57f94a3959cfca9d772e06

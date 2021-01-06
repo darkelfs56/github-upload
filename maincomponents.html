@@ -12,11 +12,63 @@
         <a href="peripherals.html">Computer Peripherals</a>
         <a href="project1.html">Essential and Useful Parts</a>
         <a href="#">Help</a>
+      
     </div>
 
     <h1 class="webTitle">Main Components</h1>
     <p class="introText">The brain, brawn and heart of your standard computer.
+     
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/motherboard.png" style="width: 210px;">
+              <div class="text">
+                <p>Motherboard</p>
+                <a href="#motherboard_section">Learn More</a>
+              </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/cpu.png" style="width: 300px;">
+              <div class="text">
+            <p>CPU</p>
+          <a href="#cpu_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/gpu.png" style="width: 300px;">
+              <div class="text">
+            <p>GPU</p>
+          <a href="#gpu_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/ram.png" style="width: 310px; padding-top: 30px;">
+              <div class="text">
+            <p>RAM</p>
+          <a href="#ram_section">Learn More</a>
+        </div>
+        </div>
+
+        <div class="mySlides fade">
+              <img class="cardImage" src="Images/storage.png" style="width: 240px; padding-left: 30px;">
+              <div class="text">
+            <p>Storage</p>
+          <a href="#storage_section">Learn More</a>
+        </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
     <hr>
+    
     <p class="MC_info"
        style="text-align: center;
               width: 40%;
@@ -30,7 +82,7 @@
     <hr>
   <div class="row">
   <div class="column">
-    <h1 class="compoTitle">Motherboard.</h1>
+    <h1 id="motherboard_section" class="compoTitle">Motherboard.</h1>
     <h2 class="subTitle">The heart―</h2>
     <p class="MC_info">
         The motherboard is the central of all other main components
@@ -46,7 +98,7 @@
       <div class="readMore_container">
       <div class="row">
         <div class="column">
-          <h1 class="compoTitle" style="float: right;">CPU.</h1>
+          <h1 id="cpu_section" class="compoTitle" style="float: right;">CPU.</h1>
           <img class="compoImage" src="Images/cpu.png" alt="example_cpu">
         </div>
         <div class="column">
@@ -66,14 +118,14 @@
           <span class="extendBtn" style="float: right;">Read More</span>
         </div>
         <div class="column">
-          <h1 class="compoTitle">GPU.</h1>
+          <h1 id="gpu_section" class="compoTitle">GPU.</h1>
           <img class="compoImage" src="Images/gpu.png" alt="example_gpu">
         </div>
         </div>
         <hr>
         <div class="row">
           <div class="column">
-            <h1 class="compoTitle" style="text-align: right;">RAM.</h1>
+            <h1 id="ram_section" class="compoTitle" style="text-align: right;">RAM.</h1>
             <img class="compoImage" src="Images/ram.png" alt="example_ram">
           </div>
           <div class="column">
@@ -92,7 +144,7 @@
             <span class="extendBtn" style="float: right;">Read More</span>
           </div>
           <div class="column">
-            <h1 class="compoTitle">Storage.</h1>
+            <h1 id="storage_section" class="compoTitle">Storage.</h1>
             <img class="compoImage" src="Images/storage.png" alt="example_storage">
           </div>
         </div>

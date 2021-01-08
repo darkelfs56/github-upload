@@ -20,21 +20,34 @@ h3 {
   margin: 10px auto;
 }
 
-div.menu {
-    border: solid 2px #6A6A6A;
+nav.menu {
+    text-align: center;
+    /* border: solid 2px #6A6A6A; */
     background-color: #F4E04D;
-    width: 590px;
-    margin: 40px auto 16px;
+    width: auto;
+    margin: 0px auto 20px;
     padding: 20px 10px 20px;
     position: sticky;
     top:0px;
     z-index: 100;
 }
 
-div.menu a {
-  font: normal 0.90em 'Source Sans Pro light 300', Arial, sans-serif;
+nav.menu a {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   color: #3A3A3A;
   margin: 0.5em;
+}
+
+nav.menu a:hover {
+  margin: 0px;
+  padding: 40px 40px 21px;
+  background-color: #F4A04D;
+}
+
+#clickedLink {
+  margin: 0px;
+  padding: 40px 40px 21px;
+  background-color: #F4A04D;
 }
 
 h1.webTitle {

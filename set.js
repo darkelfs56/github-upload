@@ -8,9 +8,11 @@ btn.onclick= function (){
 
   var $table = $('<table/>');
   $('#setlist').empty();
+
+  var $thead = $table.append('<thead/>').children('thead');
   var $tbody = $table.append('<tbody/>').children('tbody');
 
-  $tbody.append('<tr/>').children('tr:last')
+  $thead.append('<tr/>').children('tr:last')
   .append("<td>Product Type</td>")
   .append('<td>Product Name</td>')
   .append('<td>Price</td>')

@@ -19,7 +19,7 @@ btn.onclick= function (){
 
   if(strUser < 2500){
     alert("Sorry we don't have any suggestion for your budget range");
-  }else if(strUser > 2500 && strUser < 5000){
+  }else if(strUser >= 2500 && strUser < 5000){
     //alert("GPU\tRX560\tRM525\nCPU\tR3 3100\tRM450\ncpucooler\tStock\tRM0\nMotherboard\tMSI B450M\tRM325\nRAM\t4GB DDR4\tRM75\nstorage\t2TB HDD\tRM250\nstorageOS\t240GB SSD\tRM125\nPSU\tCorsair 450W\tRM250\nCase\tArcadia 2\tRM175");
 
     $tbody.append('<tr/>').children('tr:last')
@@ -68,11 +68,11 @@ btn.onclick= function (){
     .append("<td>RM175</td>")
 
     $tbody.append('<tr/>').children('tr:last')
-    .append("<td>Total</td>")
-    .append("<td>RM2175</td>")
+    .append("<td><b>Total</b></td>")
+    .append("<td><b>RM2175</b></td>")
 
     $table.appendTo('.setlist');
-  }else if(strUser> 5000 && strUser < 10000){
+  }else if(strUser>= 5000 && strUser < 10000){
     //alert("GPU\tRTX2060\tRM1300\nCPU\tR5 3600\tRM975\ncpucooler\tPure Rock 2\tRM175\nMotherboard\tMSIX570-A Pro\tRM725\nRAM\t8GB DDR4\tRM175\nstorage\t2TB HDD\tRM250\nstorageOS\t500GB SSD\tRM275\nPSU\tSeasonic 620W\tRM325\nCase\tH510\tRM325");
 
         $tbody.append('<tr/>').children('tr:last')
@@ -121,8 +121,8 @@ btn.onclick= function (){
         .append("<td>RM325</td>")
 
         $tbody.append('<tr/>').children('tr:last')
-        .append("<td>Total</td>")
-        .append("<td>RM4525</td>")
+        .append("<td><b>Total</b></td>")
+        .append("<td><b>RM4525</b></td>")
 
         $table.appendTo('.setlist');
   }else {
@@ -173,8 +173,8 @@ btn.onclick= function (){
         .append("<td>RM725</td>")
 
         $tbody.append('<tr/>').children('tr:last')
-        .append("<td>Total</td>")
-        .append("<td>RM8725</td>")
+        .append("<td><b>Total</b></td>")
+        .append("<td><b>RM8725</b></td>")
 
         $table.appendTo('.setlist');
     //alert("GPU \t RTX 3070 \t RM3300 \nCPU \t AMD Ryzen 5 5600X \t RM1700 \nCPU Cooler \t Dark Rock 4 \t RM300 \nMotherboard \t GIGABYTE X570 AORUS ELITE \t RM925 \nRAM \t Corsair Vengeance LPX 16GB \t RM325 \nHDD \t Seagate BarraCuda 2TB \t RM250 \nSSD \t Crucial P1 1TB \t RM675 \nPower Supply \t Corsair 750W (G) \t RM525 \nCase \t H710i \t RM725");

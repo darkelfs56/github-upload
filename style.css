@@ -113,7 +113,13 @@ div.textBox2 p {
   color: #000;
   margin: 7px auto;
 }
-
+.setlist td {
+  border: 1px solid brown;
+  padding: 10px;
+}
+.setlist  {
+  padding: 20px;
+}
 <<<<<<< HEAD
 
 html{

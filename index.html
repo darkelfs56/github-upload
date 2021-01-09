@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Home | Computer Parts for Newbies</title>
   </head>
   <body>
@@ -263,18 +264,11 @@
         </div>
 
       </div>
-
       <div class="shop">
-
         <input id="pc" type="number" name="pc" placeholder="Please input your budget here " style="width:250px">
           <button type="button">Submit</button>
-
-
+          <table class="setlist" id='setlist' style="display: none"></table>
       </div>
-
-
-
-
       <footer>
         <h3>Contact Us</h3>
         <p>Address: UIA Gombak, 51300, Selangor <br>
@@ -283,28 +277,7 @@
         </p>
       </footer>
 
-<script>
-const btn = document.querySelector("button");
-
-btn.onclick= function (){
-  var e = document.getElementById("pc");
-  var strUser = e.value;
-
-  if(strUser < 2500){
-    alert("Sorry we don't have any suggestion for your budget range");
-  }else if(strUser > 2500 && strUser < 5000){
-    alert("GPU\tRX560\tRM525\nCPU\tR3 3100\tRM450\ncpucooler\tStock\tRM0\nMotherboard\tMSI B450M\tRM325\nRAM\t4GB DDR4\tRM75\nstorage\t2TB HDD\tRM250\nstorageOS\t240GB SSD\tRM125\nPSU\tCorsair 450W\tRM250\nCase\tArcadia 2\tRM175");
-  }else if(strUser> 5000 && strUser < 10000){
-    alert("GPU\tRTX2060\tRM1300\nCPU\tR5 3600\tRM975\ncpucooler\tPure Rock 2\tRM175\nMotherboard\tMSIX570-A Pro\tRM725\nRAM\t8GB DDR4\tRM175\nstorage\t2TB HDD\tRM250\nstorageOS\t500GB SSD\tRM275\nPSU\tSeasonic 620W\tRM325\nCase\tH510\tRM325");
-  }else {
-    alert("GPU \t RTX 3070 \t RM3300 \nCPU \t AMD Ryzen 5 5600X \t RM1700 \nCPU Cooler \t Dark Rock 4 \t RM300 \nMotherboard \t GIGABYTE X570 AORUS ELITE \t RM925 \nRAM \t Corsair Vengeance LPX 16GB \t RM325 \nHDD \t Seagate BarraCuda 2TB \t RM250 \nSSD \t Crucial P1 1TB \t RM675 \nPower Supply \t Corsair 750W (G) \t RM525 \nCase \t H710i \t RM725");
-  }
-
-
-}
-
-
-</script>
+<script src='set.js'></script>
 
   </body>
 </html>

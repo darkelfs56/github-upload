@@ -7,7 +7,7 @@ btn.onclick= function (){
   var strUser = e.value;
 
   var $table = $('<table/>');
-
+  $('#setlist').empty();
   var $tbody = $table.append('<tbody/>').children('tbody');
 
   $tbody.append('<tr/>').children('tr:last')

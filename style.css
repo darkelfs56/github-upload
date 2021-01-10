@@ -36,7 +36,7 @@ ul.menu li {
   float: left;
 }
 
-li a {
+ul.menu li a {
   padding: 8px;
   background-color: #F4E04D;
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
@@ -47,7 +47,7 @@ li a {
 
 }
 
-li a:hover  {
+ul.menu li a:hover  {
   background-color: #F4A04D;
   padding: 10px 10px;
 }
@@ -229,7 +229,7 @@ div.content li  {
 .clickables{
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 400px;
+  margin-left: 365px;
   font-size: 20px;
 }
 

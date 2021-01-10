@@ -20,33 +20,40 @@ h3 {
   margin: 10px auto;
 }
 
-nav.menu {
-    text-align: center;
-    /* border: solid 2px #6A6A6A; */
-    background-color: #F4E04D;
-    width: auto;
-    margin: 0px auto 20px;
-    padding: 20px 10px 20px;
-    position: sticky;
-    top:0px;
-    z-index: 100;
+ul.menu {
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  width: 649px;
+  margin: auto;
+  position: sticky;
+  padding: 20px 10px 40px;
+  overflow: hidden;
 }
 
-nav.menu a {
+ul.menu li {
+  float: left;
+}
+
+li a {
+  padding: 8px;
+  background-color: #F4E04D;
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   color: #3A3A3A;
-  margin: 0.5em;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+
 }
 
-nav.menu a:hover {
-  margin: 0px;
-  padding: 40px 40px 21px;
+li a:hover  {
   background-color: #F4A04D;
+  padding: 10px 10px;
 }
 
 #clickedLink {
   margin: 0px;
-  padding: 40px 40px 21px;
+  padding: 10px 10px;
   background-color: #F4A04D;
 }
 
@@ -222,20 +229,27 @@ div.content li  {
   content: '\02795'; /* Unicode character for "minus" sign (-) */
 }
 
+.shortcut {
+  margin-left: 400px;
+}
+
+.shortcut a {
+  font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
+  margin: auto;
+  display: inline-block;
+  background-color: #404040;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 8px 20px;
+  width: 110px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .perititle{
   font-size: 40px;
-}
-.nav  {
-  display: inline;
-}
-
-nav a {
-  text-align: center;
-}
-
-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 footer  {

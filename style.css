@@ -225,11 +225,14 @@ div.content li  {
   content: '\02795'; /* Unicode character for "minus" sign (-) */
 }
 
-.shortcut {
+.clickables{
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-left: 400px;
+  font-size: 20px;
 }
 
-.shortcut a {
+.clickables a {
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   margin: auto;
   display: inline-block;
@@ -520,14 +523,4 @@ img.cardImage{
   .column {
     width: 100%;
   }
-}
-
-.clickables{
-  width: 80%;
-  margin: 40px auto;
-}
-.clickables a{
-  margin: 0 20px 0 20px;
-  padding: 15px 30px 15px 30px;
-  border: solid 1px black;
 }

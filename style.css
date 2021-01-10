@@ -59,14 +59,14 @@ li a:hover  {
 
 h1.webTitle {
   font: bold 3.5em 'Source Sans Pro', Arial, sans-serif;
-  margin: 0 auto;
+  margin: 50px auto 10px;
   text-align: center;
 }
 
 p.introText {
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   color: #888888;
-  margin: 20px auto;
+  margin: 25px auto 50px;
   text-align: center;
 }
 
@@ -179,22 +179,17 @@ html{
   background-color: #555;
 }
 
-div.pagetitle {
-  width: 100%;
-  background-color: white;
-}
-
 .collapsible {
   background-color: #5EB1BF;
   color: #f1ff62;
   cursor: pointer;
-  padding: 18px;
+  padding: 20px 40px;
   width: 100%;
   border: 1px solid black;
   text-align: left;
   outline: none;
   font-size: 15px;
-  back
+  border-radius: 15px 50px 50px 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -204,25 +199,26 @@ div.pagetitle {
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
+  padding: 0 50px 0 50px;
   background-color: #54F2F2;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   font: bold 1.3em 'Source Sans Pro', Arial, sans-serif;
   font-weight: 300;
+  border-radius: 15px 50px 80px 80px;
 }
 
 div.content li  {
-    padding: 10px;
+    padding: 20px;
 }
 
 .collapsible:after {
   content: "\2796"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 17px;
   color: white;
   float: right;
-  margin-left: 5px;
+  margin: 5px 20px 0;
 }
 
 .active:after {
@@ -375,10 +371,6 @@ h2.subTitle {
   color: #404040;
 }
 
-img.compoImage {
-  width: 400px;
-}
-
 .MC_column {
   float: left;
   width: 43%;
@@ -515,6 +507,10 @@ img.cardImage{
   background-color: white;
   z-index: 97;
 }
+.row{
+  width: 80%;
+  margin: 20px auto;
+}
 .row:after {
   content: "";
   display: table;
@@ -526,8 +522,12 @@ img.cardImage{
   }
 }
 
-h2.eTitle {
-  font: bold 1.5em 'Source Sans Pro bold 700', Arial, sans-serif;
-  color: #404040;
-  margin: 0 auto;
+.clickables{
+  width: 80%;
+  margin: 40px auto;
+}
+.clickables a{
+  margin: 0 20px 0 20px;
+  padding: 15px 30px 15px 30px;
+  border: solid 1px black;
 }

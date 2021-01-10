@@ -1,6 +1,6 @@
 document.getElementById("setlist").style.display = "block";
 
-const btn = document.querySelector("button");
+const btn = document.querySelector("button.submit");
 
 btn.onclick= function (){
   var e = document.getElementById("pc");

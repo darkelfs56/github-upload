@@ -29,6 +29,7 @@ ul.menu {
   position: sticky;
   padding: 20px 10px 40px;
   overflow: hidden;
+  z-index: 1000;
 }
 
 ul.menu li {

@@ -375,6 +375,10 @@ p.MC_info {
   width: 80px;
 }
 
+.extendBtn:hover{
+  background-color: navy;
+}
+
 .moreText {
   display: none;
 }
@@ -469,6 +473,7 @@ h2.subTitle {
 }
 
 .text a{
+  text-decoration: none;
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   margin: auto;
   display: block;
@@ -479,6 +484,11 @@ h2.subTitle {
   outline: none;
   padding: 8px 20px;
   width: 80px;
+}
+
+.text a:hover
+{
+  background-color: navy;
 }
 
 /* Fading animation */

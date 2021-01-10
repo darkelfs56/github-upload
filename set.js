@@ -5,10 +5,9 @@ const btn = document.querySelector("button.submit");
 btn.onclick = function() {
   var e = document.getElementById("pc");
   var budgetValue = e.value;
-
   var $table = $('<table/>');
   $('#setlist').empty();
-
+  $('#note').empty();
   var $thead = $table.append('<thead/>').children('thead');
   var $tbody = $table.append('<tbody/>').children('tbody');
 
@@ -18,7 +17,7 @@ btn.onclick = function() {
     .append('<td>Price</td>')
 
   if (budgetValue < 0) {
-    alert("Please input a positive number.")
+    alert("Please input a positive number.");
   } else if (budgetValue >= 0 && budgetValue < 2500) {
     alert("Sorry we don't have any suggestion for your budget range.");
   } else if (budgetValue >= 2500 && budgetValue < 5000) {
@@ -73,6 +72,8 @@ btn.onclick = function() {
       .append("<td><b>RM2175</b></td>")
 
     $table.appendTo('.setlist');
+    $('#note').append("Note: The remaining money can be used to buy monitor, mouse and keyboard as they are not listed in the list.");
+
   } else if (budgetValue >= 5000 && budgetValue < 10000) {
 
     $tbody.append('<tr/>').children('tr:last')
@@ -125,6 +126,8 @@ btn.onclick = function() {
       .append("<td><b>RM4525</b></td>")
 
     $table.appendTo('.setlist');
+    $('#note').append("Note: The remaining money can be used to buy monitor, mouse and keyboard as they are not listed in the list.");
+
   } else {
 
     $tbody.append('<tr/>').children('tr:last')
@@ -177,7 +180,7 @@ btn.onclick = function() {
       .append("<td><b>RM8725</b></td>")
 
     $table.appendTo('.setlist');
+    $('#note').append("Note: The remaining money can be used to buy monitor, mouse and keyboard as they are not listed in the list.");
+
   }
-
-
 }

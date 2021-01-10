@@ -20,6 +20,12 @@ h3 {
   margin: 10px auto;
 }
 
+p {
+  font: normal 1em 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 300;
+  color: #888;
+}
+
 ul.menu {
   position: sticky;
   top: 0;

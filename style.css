@@ -183,8 +183,8 @@ html{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #F4E04D;
-  color: black;
+  background-color: grey;
+  color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -195,8 +195,8 @@ html{
 }
 
 .collapsible {
-  background-color: #5EB1BF;
-  color: #f1ff62;
+  background-color: #010101;
+  color: #ffffff;
   cursor: pointer;
   padding: 20px 40px;
   width: 100%;
@@ -209,13 +209,13 @@ html{
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #2f2e2e;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 50px 0 50px;
-  background-color: #54F2F2;
+  background-color: #ffffff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -251,7 +251,7 @@ div.content li  {
   font: normal 1em 'Source Sans Pro light 300', Arial, sans-serif;
   margin: auto;
   display: inline-block;
-  background-color: #404040;
+  background-color: #222222;
   color: white;
   border: none;
   border-radius: 25px;
